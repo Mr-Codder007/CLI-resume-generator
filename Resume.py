@@ -42,6 +42,12 @@ if os.path.exists(file_name):
 name=input("Enter Your Name: ").strip().title()
 address_input=input("Enter Your Address: ").strip()
 number_input=input("Enter Your Phone Number: ").strip()
+while True:
+    if number_input.isdigit() and len(number_input)==10:
+        break
+    print("Number Should be 10 Digit Integer\n")
+    number_input=input("Re-Enter Your Phone Number: ").strip()
+
 email_input=input("Enter Your Email Address: ").strip()
 education=input("Enter Your Educational Qualification: ").strip()
 if education== '':
